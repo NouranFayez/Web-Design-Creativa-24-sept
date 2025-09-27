@@ -1,0 +1,19 @@
+h1{
+    color: teal;
+}
+
+.text-blue{
+    color: blue;
+}
+
+h2{
+    color: goldenrod;
+}
+
+.bg-color{
+    background-color: lightgray;
+}
+#text-style{
+    color: red;
+    background-color: lightblue;
+}

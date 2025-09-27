@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form autocomplete="off" method="post" action="index.html">
+        <label for="firstName">First Name </label>
+        <input type="text" id="firstName"  autocomplete="off" required name="firstName"> <br>
+        <label>Last Name </label>
+        <input type="text"   autofocus name="lastName"
+         minlength="3" maxlength="14">
+        <label>Email</label>
+        <input type="email" name="userEmail">
+        <br>
+        <label>Age</label>
+        <input type="number" name="age" step="10">
+        <br>
+        <input type="text"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+         name="userPassword" placeholder="enter your password"
+         title="password: that must contain 8 or more characters that are of at least one number, and one uppercase and lowercase letter">
+        <br>
+        <input type="text" name="shippingArea" disabled value="Alex" placeholder="shipping area">
+        <input type="text" name="shippingArea" readonly value="Alex" placeholder="shipping area">
+        <br>
+        <label>Gender</label>
+        <label>Male</label><input type="radio" name="gender" value="male"> 
+        <span>Female</span><input type="radio" name="gender" value="female"> 
+
+        <br>
+        <label>Courses</label>
+        <input type="checkbox" name="courses" value="html"> <label>Html</label>
+        <input type="checkbox" name="courses" value="css" checked> <label>Css</label>
+        <input type="checkbox" name="courses" value="js"> <label>Js</label>
+        <br>
+        <!-- <label>Track</label> -->
+        <select name="track" multiple>
+            <option disabled selected >Choose your track</option>
+            <option value="0">Frontend</option>
+            <option value="1">Backend</option>
+            <option value="2" >Network</option>
+        </select>
+        <!-- datalist ==> search -->
+        <br>
+
+        <input type="file" multiple>
+
+        <br>
+        <input type="color">
+        <br>
+        <input type="date">
+        <input type="datetime-local">
+        <input type="month">
+        <input type="range" name="range" min="100" max="300" value="100" step="50">
+        <br>
+        <textarea placeholder="enter your address" rows="5" cols="50"></textarea>
+        <!-- <button type="button">
+            <img src="" alt="">
+        </button> -->
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </form>
+    <button>Login</button>
+
+    <!-- track=Frontend&track=Backend&track=Network -->
+
+<!-- firstName=dfgh&lastName=&userEmail=&age=&userPassword=&shippingArea=Alex&gender=on -->
+    <!-- ?firstName=hgcgc&lastName=vhvhv -->
+
+    <!-- courses=on&courses=on -->
+</body>
+</html>
