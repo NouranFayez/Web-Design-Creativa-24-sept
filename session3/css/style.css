@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.div-style{
+    color: blue;
+    background-color: #eaeaea;
+    width: 30%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding: 2% 3% 2% 1%;
+    padding: 2% 3% 4%;
+    padding: 2% 3%;
+    padding: 2%;
+    /* margin: 2%; */
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-color: green;
+    border-top-width: 11px;
+    border-top-style: solid;
+    border-top: 3px solid red;
+    border: 2px solid red;
+    /* /* height: 200px; */
+}
+
+
+.card{
+       width: calc(100% / 3 - 4%);
+    border: 4px solid lightgray;
+    padding: 2%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0% 2%;
+}
+
+.card img{
+    width: 100%;
+    
+}
+.card .card-details{
+    padding: 2%;
+}
+
+
+
+body{
+    margin: 0;
+}
+/* .card h2 , .card p{
+    margin: 0;
+} */
+/* .card p{
+    margin: 0;
+} */
+
+.card a {
+    border: 2px solid lightgray;
+    padding: 4%;
+    margin-top: 2%;
+    /* width: 100px; */
+    display: inline-block;
+}
+
+
+/* display ==> block , inline , inline-block */
+
+.bg-light{
+    background-color: #eeeeee;
+}
+.container{
+    width: 80%;
+    /* background: aqua; */
+    margin: auto;
+}
+.padding-top-bottom{
+    padding: 4% 0%;
+}
+
+.title-style{
+        text-align: center;
+    margin-bottom: 6%;
+    background: aqua;
+}
+
+.form-style{
+    width: 40%;
+    background: antiquewhite;
+    padding: 1%;
+}
+
+.form-style input{
+        width: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+    border-color: antiquewhite;
+    border: 2px solid teal;
+    border-radius: 5px;
+}
