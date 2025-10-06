@@ -1,0 +1,172 @@
+/* Reset style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+
+
+/* global style */
+.container{
+    width: 90%;
+    margin: auto;
+}
+.padding-top-bottom{
+    padding: 6% 0%;
+}
+
+.btn-tranparent{
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    padding: 1% 2%;
+    font-size: 20px;
+}
+.bg-black{
+    background-color: rgb(52, 52, 52);
+}
+.d-inline-block{
+    display: inline-block;
+}
+.w-100{
+    width: 100%;
+}
+.clear{
+    clear: both;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.margin-left-right{
+    margin: 0% 5%;
+}
+
+.btn{
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 1% 2%;
+       position: absolute;
+    top: 3%;
+    left: 4%;
+        z-index: 1;
+}
+.position-relative{
+    position: relative
+}
+.position-absolute{
+    position: absolute;
+    top: 0;
+    padding-top: 15%;
+}
+
+/* custom style */
+nav{
+    color: white;
+    padding: 1% 0%;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+nav ul {
+      margin-left: 69%;
+    width: 24%;
+}
+nav li{
+    margin-left: 4%;
+}
+
+.bg-img{
+    background-image: url(../images/naturaljpg.jpg);
+    /* height: 500px; */
+    background-repeat: no-repeat;
+    background-color: aqua;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 100% 100%;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.313);
+    height: 100%;
+    color: white;
+}
+.banner-details{
+    width: 40%;
+}
+
+.banner-details h4{
+    font-size: 50px;
+    margin: 3% 0%;
+}
+nav a{
+    /* color: white; */
+}
+
+.head-style{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.card{
+    width: 30%; 
+    /* box-shadow ==> x-offset y-offset blur spread color */
+    box-shadow: 0px 0px 12px 3px #c4bdbd;;
+    position: relative;
+}
+.card-body{
+    padding: 3%;
+}
+
+.card h3:hover{
+    color: red;
+}
+
+.card:hover a{
+    color: blue;
+}
+.card img{
+    display: block;
+}
+
+.card img:hover+ .card-body{
+    background: lightblue;
+}
+#up-arrow{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 9px;
+    position: fixed;
+        bottom: 3%;
+    /* left: 94%; */
+    right: 3%;
+}
+.bg-blue{
+    background-color: blue;
+    padding: 2% ;
+}
+
+/* position ==> fixed , sticky , relative , absolute , static */
+/* left right top bottom z-index */
