@@ -1,0 +1,49 @@
+/* Reset style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global style */
+.container{
+    width: 90%;
+    margin: auto;
+}
+.bg-light{
+    background-color: rgb(233, 232, 232);
+}
+.padding-top-bottom{
+    padding: 3% 0%;
+}
+.flex-box{
+    display: flex;
+    /* justify-content ==> flex-start (default) , flex-end , center , space-between , space-around , space-evenly */
+    /* justify-content: space-between; */
+    /* flex-wrap:nowrap (default) , wrap; */
+    flex-wrap: wrap;
+    /* flex-direction ==> row (default) , row-reverse , column , column-reverse */
+    /* flex-flow: wrap row-reverse; */
+    /* align-items ==> stretch (default) , flex-start , flex-end , center */
+    align-items: center;
+    /* align-content: flex-start , center , flex-end , space-between , space-around , space-evenly ; */
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.align-self-start{
+    align-self: flex-end;
+}
+.order-first{
+    order: -1;
+}
+
+
+/* custom style */
+.card{
+    background-color: white;
+    padding: 2%;
+    width: 30%;
+    border: 1px solid;
+
+}
