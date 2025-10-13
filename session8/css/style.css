@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.padding-top-bottom {
+    padding: 4% 0;
+}
+
+
+.card {
+    width: 30%;
+    font-size: 20px;
+    box-shadow: 0px 0px 3px 2px #eee;
+    padding: 2%;
+    background-color: teal;
+    color: white;
+    /* transition-duration: 5s; */
+    /* transition-property: background; */
+    /* ease , linear , ease-in , ease-out , ease-in-out */
+    /* transition-timing-function: linear ; */
+    /* transition-delay: 3s; */
+    transition: 2s linear;
+
+}
+
+.card:hover {
+    width: 60%;
+    background-color: goldenrod;
+
+
+}
+
+.card-img {
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.card-img img {
+    width: 100%;
+    height: 400px;
+}
+
+.card-position-absolute {
+    position: absolute;
+    padding: 2%;
+    background-color: aquamarine;
+    top: 94%;
+    height: 100%;
+    transition: 2s;
+}
+
+.card-position-absolute h3 {
+    margin-bottom: 4%;
+}
+
+.card-img:hover .card-position-absolute {
+    top: 0;
+}
+
+
+.card-transform{
+    width: 40%;
+    padding: 3%;
+    color: white;
+    font-size: 25px;
+    transition: 2s;
+}
+
+.bg-gold{
+    background-color: goldenrod;
+}
+.bg-teal{
+    background-color: teal;
+}
+
+.card-transform:hover{
+    transform: translateX(100px);
+    transform: translateX(-100px);
+    transform: translateX(50%);
+    transform: translateY(200px);
+    transform: translateY(-50%);
+    transform: translate(-50% , 100px);
+    transform: rotateY(60deg);
+    transform: rotateX(60deg);
+    transform: rotate(60deg);
+    transform: skewX(40deg);
+    transform: skewX(-40deg);
+    transform: skewY(40deg);
+    transform: scaleX(2);
+    transform: scaleX(0.5);
+    transform: scaleX(0);
+    transform: scaleY(1.5);
+    transform: scaleY(0);
+    transform: scale(1.5);
+    /* transform: matrix() ==> scaleX skewy skewx scaleY translateX translateY; */
+    transform: matrix(1.5 , 0 , 0.3 , 0.5 , 200 , 100);
+    transform: translateX(200px) rotate(30deg);
+}
+
+.card-scale-rotate{
+    width: 40%;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: lightblue;
+    overflow: hidden;
+
+}
+.card-scale-rotate img{
+    width: 100%;
+    transition: 2s;
+
+}
+
+.card-scale-rotate img:hover{
+    transform: rotate(20deg) scale(1.5);
+}
+.overflow-hidden{
+    overflow: hidden;
+}
