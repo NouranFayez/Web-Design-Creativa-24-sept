@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.bg-light {
+    background-color: #eee;
+}
+.padding-top-bottom{
+    padding: 3% 0%;
+}
+
+/* .card {
+    width: 30%;
+    box-shadow: 0px 0px 3px 4px #eee;
+    padding: 2%;
+}
+
+.card:hover {
+    background-color: goldenrod;
+    color: white;
+}
+
+.card:hover h3 {
+    color: blue;
+} */
+
+.card {
+    width: 30%;
+    box-shadow: 0px 0px 3px 4px #eee;
+    padding: 2%;
+    &:hover {
+        background-color: goldenrod;
+        color: white;
+        & h3{
+            color: blue; 
+        }
+    }
+    /* &:hover{
+
+    } */
+}
+
+.card + h2{
+    color: blue;
+}
+.card ~ h2{
+    border-bottom: 1px solid;
+}
+
+
+.card-img{
+    width: 40%;
+    background-color: #eee;
+    padding: 2%;
+}
+.card-img img{
+    width: 100%;
+    /* width: 316px; */
+    /* height: 316px; */
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+.card-img:hover img{
+        filter: grayscale(1);
+    filter: grayscale(0.5);
+    filter: brightness(2);
+    filter: opacity(0.5);
+    filter: blur(0px);
+    /* filter: drop-shadow(); ==> search */
+}
+.card-text {
+    width: 30%;
+    padding: 2%;
+    box-shadow: 0px 0px 4px 3px #eee;
+    font-size: 20px;
+    white-space: nowrap;
+    /* scroll , auto , hidden */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 0px 0px 3px #403e3eee;
+    color: white;
+}
+
+.card-animation{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    animation-name: changeBgColor ;
+    animation-duration: 5s;
+    margin-top: 3%;
+    animation-iteration-count: 2;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: reverse; */
+    animation-direction: alternate;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    /* animation-fill-mode ==> search */
+   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes changeBgColor {
+    /* from {
+        background-color: red;
+    }
+    to{
+        background-color: lightblue;
+        border-radius: 50%;
+    } */
+
+    0%{
+        background-color: red; 
+    }
+    25%{
+        background-color: lightblue;
+        border-radius: 50%;
+        transform: translateX(300px);
+    }
+    50%{
+        background-color: black;
+        transform: translate(300px , 300px);
+    }
+    75%{
+        background-color: lightgray;
+        transform: translate(0px , 300px);
+    }
+    100%{
+        background-color: brown;
+    }
+    
+}
+
+
+.prespective{
+    perspective: 1000px;
+}
+
+.card-transform{
+    width: 30%;
+    padding: 2%;
+    box-shadow: 0px 0px 4px 3px #eee;
+    transition: 1s;
+    background-color: teal;
+    color: white;
+}
+.card-transform:hover{
+    transform: rotateY(180deg);
+}
+
+
+.flip-card{
+    width: 40%;
+   
+
+
+}
+.card-body{
+    position: relative;
+     height: 200px;
+     transition: 1s;
+     transform-style: preserve-3d;
+}
+
+.card-front , .card-back{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-front{
+    background-color: teal;
+    color: white;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+.card-back{
+    background-color: goldenrod;
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+
+
+/* .card-front:hover{
+    transform: rotateY(180deg);
+} */
+
+.flip-card:hover .card-body{
+    transform: rotateY(180deg);
+}
