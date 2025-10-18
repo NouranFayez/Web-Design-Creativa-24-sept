@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/* Pseudo Class && Psuedo Element */
+
+input{
+    margin-top: 2%;
+    border: 0;
+    border-bottom: 2px solid blue;
+
+}
+input:focus{
+    outline: 0;
+    border-color: goldenrod;
+}
+input:disabled{
+    background-color: lightblue !important;
+}
+input:read-only{
+    background-color: blue;
+}
+input:checked{
+    width: 30px;
+    height: 30px;
+}
+
+.custom-div p:first-child{
+    color: red;
+}
+.custom-div p:last-child{
+    color: red;
+}
+.custom-div p:nth-child(2){
+    color: blue;
+}
+table{
+ border-collapse: collapse;
+ width: 60%;
+}
+
+th , td {
+    border: 1px solid ;
+    padding: 2%;
+}
+
+tr:nth-child(2) , tr:nth-child(4){
+    background-color: #eee;
+}
+
+tr:nth-child(even){
+    background-color: #eee;
+}
+tr:nth-child(odd){
+    background-color: lightblue;
+}
+
+th{
+    background-color: teal;
+    color: white;
+}
+
+tr:nth-child(even):hover{
+    background-color: black;
+    color: white;
+}
+
+h2::first-line{
+    color: blue;
+}
+h2::first-letter{
+    color: red;
+    font-size: 35px;
+}
+h2::selection{
+    background-color: goldenrod;
+    color: white;
+}
+::selection{
+      background-color: goldenrod;
+    color: white;
+}
+::placeholder{
+   color: goldenrod; 
+}
+::marker{
+    color: red;
+}
+
+.before-after-card{
+    width: 40%;
+    border: 1px solid lightgray;
+    padding: 2%;
+}
+.before-after-card{
+    position: relative;
+}
+.before-after-card::before{
+    content: "";
+    color: blue;
+    font-size: 20px;
+    background: blue;
+    padding: 4%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 100%;
+}
+
+.before-after-card::after{
+    content: '\f015';
+    font-family: 'Font Awesome 7 Free';
+}
+
+.before-after-card::before:hover{
+    background-color: blue;
+}
