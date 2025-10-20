@@ -1,0 +1,8 @@
+.carousel-caption{
+    bottom: calc(50% - 56px);
+    padding: 0;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: goldenrod;
+}
