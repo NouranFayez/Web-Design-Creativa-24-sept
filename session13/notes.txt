@@ -1,0 +1,10 @@
+//  variables ==> data type (string , number , boolean (true / false) 
+// , undefined , null)
+
+
+// operations ==> Mathematical Operation ==> (+ - / * ** % ++ --)
+                  Assignment Operators ==> += , -= , /= *= ...
+                  Comparison Operator ==> (> >= < <= == === != !==)
+                  unary operator ==> (typeof , instanceof)
+                  logical Operator ==> (&& || !)
+                  ternary operator=> (condition)? true : false
