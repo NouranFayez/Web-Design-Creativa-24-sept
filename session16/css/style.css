@@ -1,0 +1,11 @@
+.card{
+    width: 30%;
+    background-color: lightblue;
+    padding: 2%;
+    margin: 2% auto;
+}
+
+
+.border-dark{
+    border: 4px solid black;
+}
