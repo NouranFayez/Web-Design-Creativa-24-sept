@@ -88,3 +88,6 @@ let uploadBtn = document.getElementById('uploadBtn')
 uploadBtn.addEventListener('click' , ()=>{
     UploadInput.click()
 })
+
+
+
